@@ -5,7 +5,7 @@ data FSObject = File String | Folder String List deriving Show
 
 fs :: FSObject
 
-fs = Folder "root" (Cons (File "f1") (Cons (File "f2") (Cons (Folder "foler1" (Cons (File "f3") Empty)) Empty)))
+fs = Folder "root" (Cons (File "f1") (Cons (File "f2") (Cons (Folder "folder1" (Cons (File "f3") Empty)) Empty)))
 
 -- szuka pliku o podanej nazwie w danym systemu plików (tj. dla obiektu będącego korzeniem tego systemu)
 
